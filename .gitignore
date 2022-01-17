@@ -1,0 +1,14 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+
+.vscode
+
+x-admin-node/node_modules
+
+
+.idea
+
+x-admin-node/.idea

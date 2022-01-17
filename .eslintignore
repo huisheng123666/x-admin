@@ -1,0 +1,9 @@
+node_modules
+
+x-admin-node
+
+public
+
+dist
+
+vite.config.ts

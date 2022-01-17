@@ -1,0 +1,18 @@
+[2022-01-05T16:41:00.148] [ERROR] error - TypeError: user.success is not a function
+    at /Users/mengweixu/my-project/x-admin/x-admin-node/routes/menus.js:162:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/mengweixu/my-project/x-admin/x-admin-node/app.js:43:3
+    at async serve (/Users/mengweixu/my-project/x-admin/x-admin-node/node_modules/koa-static/index.js:53:9)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
+[2022-01-05T16:41:05.642] [ERROR] error - TypeError: user.success is not a function
+    at /Users/mengweixu/my-project/x-admin/x-admin-node/routes/menus.js:162:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/mengweixu/my-project/x-admin/x-admin-node/app.js:43:3
+    at async serve (/Users/mengweixu/my-project/x-admin/x-admin-node/node_modules/koa-static/index.js:53:9)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
+[2022-01-05T16:41:07.416] [ERROR] error - TypeError: user.success is not a function
+    at /Users/mengweixu/my-project/x-admin/x-admin-node/routes/menus.js:162:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/mengweixu/my-project/x-admin/x-admin-node/app.js:43:3
+    at async serve (/Users/mengweixu/my-project/x-admin/x-admin-node/node_modules/koa-static/index.js:53:9)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)

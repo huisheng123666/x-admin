@@ -1,0 +1,207 @@
+[2021-11-15T15:03:06.747] [ERROR] error - ***数据库连接失败: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+[2021-11-15T15:51:58.829] [ERROR] error - Error: next() called multiple times
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:36:45)
+    at /Users/mengweixu/my-project/x-admin-node/app.js:41:9
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async serve (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-static/index.js:53:9)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
+[2021-11-15T16:10:59.834] [ERROR] error - Error: next() called multiple times
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:36:45)
+    at /Users/mengweixu/my-project/x-admin-node/app.js:41:9
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async serve (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-static/index.js:53:9)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
+[2021-11-15T16:12:41.309] [ERROR] error - Error: next() called multiple times
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:36:45)
+    at /Users/mengweixu/my-project/x-admin-node/app.js:41:9
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async serve (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-static/index.js:53:9)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
+[2021-11-15T16:14:18.172] [ERROR] error - UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/mengweixu/my-project/x-admin-node/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengweixu/my-project/x-admin-node/app.js:41:9
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at views (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-views/src/index.js:91:12)
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-static/index.js:53:15)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
+[2021-11-15T16:14:18.176] [ERROR] error - UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/mengweixu/my-project/x-admin-node/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengweixu/my-project/x-admin-node/app.js:41:9
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at views (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-views/src/index.js:91:12)
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-static/index.js:53:15)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
+[2021-11-15T16:15:11.996] [ERROR] error - UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/mengweixu/my-project/x-admin-node/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengweixu/my-project/x-admin-node/app.js:41:9
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at views (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-views/src/index.js:91:12)
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-static/index.js:53:15)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
+[2021-11-15T16:15:12.004] [ERROR] error - UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/mengweixu/my-project/x-admin-node/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengweixu/my-project/x-admin-node/app.js:41:9
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at views (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-views/src/index.js:91:12)
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-static/index.js:53:15)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
+[2021-11-15T16:16:06.202] [ERROR] error - UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/mengweixu/my-project/x-admin-node/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengweixu/my-project/x-admin-node/app.js:41:9
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at views (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-views/src/index.js:91:12)
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-static/index.js:53:15)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
+[2021-11-15T16:16:06.204] [ERROR] error - UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/mengweixu/my-project/x-admin-node/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengweixu/my-project/x-admin-node/app.js:41:9
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at views (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-views/src/index.js:91:12)
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-static/index.js:53:15)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
+[2021-11-15T16:16:07.946] [ERROR] error - UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/mengweixu/my-project/x-admin-node/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengweixu/my-project/x-admin-node/app.js:41:9
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at views (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-views/src/index.js:91:12)
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-static/index.js:53:15)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
+[2021-11-15T16:16:07.951] [ERROR] error - UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/mengweixu/my-project/x-admin-node/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengweixu/my-project/x-admin-node/app.js:41:9
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at views (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-views/src/index.js:91:12)
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-static/index.js:53:15)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
+[2021-11-15T16:16:10.636] [ERROR] error - UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/mengweixu/my-project/x-admin-node/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengweixu/my-project/x-admin-node/app.js:41:9
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at views (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-views/src/index.js:91:12)
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-static/index.js:53:15)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
+[2021-11-15T16:16:10.639] [ERROR] error - UnauthorizedError: Bad Authorization header format. Format is "Authorization: Bearer <token>"
+    at Object.throw (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/lib/context.js:97:11)
+    at resolveAuthorizationHeader (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/resolvers/auth-header.js:26:18)
+    at /Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:20:49
+    at Array.find (<anonymous>)
+    at jwt (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:20:24)
+    at /Users/mengweixu/my-project/x-admin-node/node_modules/koa-unless/index.js:29:12
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/mengweixu/my-project/x-admin-node/app.js:41:9
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at views (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-views/src/index.js:91:12)
+    at dispatch (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-static/index.js:53:15)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
+[2021-11-15T16:16:29.550] [ERROR] error - UnauthorizedError: Authentication Error
+    at Object.throw (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:66:26)
+    at async /Users/mengweixu/my-project/x-admin-node/app.js:41:3
+    at async serve (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-static/index.js:53:9)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
+[2021-11-15T16:16:29.552] [ERROR] error - UnauthorizedError: Authentication Error
+    at Object.throw (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:66:26)
+    at async /Users/mengweixu/my-project/x-admin-node/app.js:41:3
+    at async serve (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-static/index.js:53:9)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
+[2021-11-15T16:16:30.297] [ERROR] error - UnauthorizedError: Authentication Error
+    at Object.throw (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:66:26)
+    at async /Users/mengweixu/my-project/x-admin-node/app.js:41:3
+    at async serve (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-static/index.js:53:9)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
+[2021-11-15T16:16:30.301] [ERROR] error - UnauthorizedError: Authentication Error
+    at Object.throw (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:66:26)
+    at async /Users/mengweixu/my-project/x-admin-node/app.js:41:3
+    at async serve (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-static/index.js:53:9)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
+[2021-11-15T16:16:34.078] [ERROR] error - UnauthorizedError: Authentication Error
+    at Object.throw (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:66:26)
+    at async /Users/mengweixu/my-project/x-admin-node/app.js:41:3
+    at async serve (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-static/index.js:53:9)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
+[2021-11-15T16:16:34.081] [ERROR] error - UnauthorizedError: Authentication Error
+    at Object.throw (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:66:26)
+    at async /Users/mengweixu/my-project/x-admin-node/app.js:41:3
+    at async serve (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-static/index.js:53:9)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
+[2021-11-15T16:17:01.462] [ERROR] error - UnauthorizedError: Authentication Error
+    at Object.throw (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:66:26)
+    at async /Users/mengweixu/my-project/x-admin-node/app.js:41:3
+    at async serve (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-static/index.js:53:9)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
+[2021-11-15T16:17:01.472] [ERROR] error - UnauthorizedError: Authentication Error
+    at Object.throw (/Users/mengweixu/my-project/x-admin-node/node_modules/koa/lib/context.js:97:11)
+    at jwt (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-jwt/lib/index.js:66:26)
+    at async /Users/mengweixu/my-project/x-admin-node/app.js:41:3
+    at async serve (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-static/index.js:53:9)
+    at async bodyParser (/Users/mengweixu/my-project/x-admin-node/node_modules/koa-bodyparser/index.js:95:5)
