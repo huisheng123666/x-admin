@@ -66,7 +66,7 @@ router.beforeEach((to, from, next) => {
   const token = getItem('x_token')
   if (token) {
     if (store.state.userinfo) {
-      checkRoute(to, next)
+      next()
       return
     }
     store.dispatch('getUserinfo')
