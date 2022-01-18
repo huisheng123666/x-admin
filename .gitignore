@@ -12,3 +12,5 @@ x-admin-node/node_modules
 .idea
 
 x-admin-node/.idea
+
+x-admin-node/logs
