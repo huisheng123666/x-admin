@@ -53,7 +53,7 @@ app.use(async (ctx, next) => {
 })
 
 app.use(koaJwt({ secret: 'xmw' }).unless({
-  path: ['/api/users/login', '/api/menu/all/list', /^\/x/, '/']
+  path: ['/api/users/login', '/api/menu/all/list', /^\/x/, '/', '/login']
 }))
 
 // routes
