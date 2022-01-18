@@ -69,6 +69,12 @@ router.get('/list', async (ctx) => {
 
 router.post('/delete', async (ctx) => {
   const { userIds } = ctx.request.body
+  const users = await User.find({ userId: { $in: userIds } })
+  const hasAdmin = users.some(item => item.userName === 'admin')
+  if (hasAdmin) {
+    ctx.body = util.fail('admin账号不允许删除')
+    return
+  }
   const res = await User.updateMany({ userId: { $in: userIds } }, { isDelete: true })
   if (res.modifiedCount) {
     ctx.body = util.success(res)

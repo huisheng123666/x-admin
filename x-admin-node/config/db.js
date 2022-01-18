@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 const config = require('./index')
 const log4js = require('../utils/log')
+const dataInit = require('./datainit')
 
 mongoose.connect(config.URL, {
   useNewUrlParser: true,
@@ -19,6 +20,7 @@ db.on('error', (err) => {
   log4js.error(`***数据库连接失败: ${err}`)
 })
 
-db.on('open', () => {
+db.on('open', async () => {
   log4js.info(`***数据库连接成功`)
+  await dataInit()
 })

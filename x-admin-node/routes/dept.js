@@ -3,6 +3,7 @@ const Dept = require('../models/deptSchema')
 const User = require('../models/userSchema')
 const util = require("../utils/util");
 const dayjs = require("dayjs");
+const Role = require("../models/roleSchema");
 
 router.prefix('/api/dept')
 
@@ -139,5 +140,11 @@ router.post('/default', async (ctx) => {
   }
   ctx.body = util.success(allMenu)
 })
+
+router.get('/init', async (ctx) => {
+  const menus = await Dept.find({}, { __v: 0 })
+  ctx.body = util.success(menus)
+})
+
 
 module.exports = router

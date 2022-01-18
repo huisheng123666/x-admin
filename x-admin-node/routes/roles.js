@@ -3,6 +3,7 @@ const Role = require('../models/roleSchema')
 const util = require('../utils/util')
 const dayjs = require("dayjs");
 const User = require("../models/userSchema");
+const Menu = require("../models/menuSchema");
 
 router.prefix('/api/roles')
 
@@ -83,7 +84,6 @@ router.post('/permission', async (ctx) => {
     ctx.body = util.fail(err.stack)
   }
 })
-
 
 module.exports = router
 
