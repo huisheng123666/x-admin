@@ -505,7 +505,7 @@ const depts = [
 
 const counters = {
   "_id" : "userId",
-  "sequence_val" : 1000009
+  "sequence_val" : 1000001
 }
 
 async function dataInit() {

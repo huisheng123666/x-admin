@@ -53,16 +53,16 @@ app.use(async (ctx, next) => {
 })
 
 app.use(koaJwt({ secret: 'xmw' }).unless({
-  path: ['/api/users/login', '/api/menu/all/list']
+  path: ['/api/users/login', '/api/menu/all/list', /^\/x/]
 }))
 
 // routes
-app.use(index.routes(), index.allowedMethods())
 app.use(users.routes(), users.allowedMethods())
 app.use(menus.routes(), menus.allowedMethods())
 app.use(roles.routes(), roles.allowedMethods())
 app.use(dept.routes(), dept.allowedMethods())
 app.use(holiday.routes(), holiday.allowedMethods())
+app.use(index.routes(), index.allowedMethods())
 
 // error-handling
 app.on('error', (err, ctx) => {

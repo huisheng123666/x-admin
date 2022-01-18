@@ -17,6 +17,8 @@ const EnvConfig = {
   }
 }
 
+console.log(env);
+
 export const baseApi = import.meta.env.VITE_MOCK ? EnvConfig[env].mockApi : EnvConfig[env].baseApi
 
 // export default {
