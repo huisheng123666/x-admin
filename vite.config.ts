@@ -19,6 +19,7 @@ export default defineConfig({
       }
     }
   },
+  base: '/x',
   resolve: {
     alias: [
       // @ts-ignore
