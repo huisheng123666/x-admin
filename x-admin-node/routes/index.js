@@ -2,7 +2,8 @@ const router = require('koa-router')()
 const fs = require('fs')
 
 router.get('/*', async (ctx, next) => {
-  ctx.body = fs.readFileSync('../public/index.html')
+  ctx.set('Content-Type', 'text/html;charset=utf-8')
+  ctx.body = fs.readFileSync('public/index.html')
 })
 
 module.exports = router

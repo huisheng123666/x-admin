@@ -12,7 +12,7 @@ export default defineConfig({
     vueJsx()
   ],
   build: {
-    outDir: 'x-admin-node/public'
+    outDir: 'x-admin-node/public/x'
   },
   server: {
     port: 3002,
