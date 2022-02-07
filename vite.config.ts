@@ -11,6 +11,9 @@ export default defineConfig({
     vue(),
     vueJsx()
   ],
+  build: {
+    outDir: 'x-admin-node/public'
+  },
   server: {
     port: 3002,
     proxy: {
