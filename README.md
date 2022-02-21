@@ -7,7 +7,7 @@
 一个基于vue3、typescript、element-plus、koa、mongodb的前后端分离的后台管理系统  
 参考了el-admin的功能，但本人前端一枚，仅实现部分功能，后台部分随便撸的，low点对我来说无所谓，各位后台有兴趣的可以重写
 
-**体验地址：**  [https://admin.xmw.monster/x](https://admin.xmw.monster/x)
+**体验地址：**  [https://xmw.monster/x](http://124.222.73.226:4000/x)
 
 **账号密码：** `admin / 123456`
 
