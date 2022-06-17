@@ -155,6 +155,9 @@ const player = ref<any>()
 function togglePlayer(show: boolean, row: any = null) {
   showPlayer.value = show
   editRow.value = row
+  if (!show) {
+    player.value.destroy()
+  }
 }
 
 function playVideo() {
