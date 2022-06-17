@@ -10,8 +10,10 @@
     "@element-plus/icons": "^0.0.11",
     "axios": "^0.24.0",
     "dayjs": "^1.10.7",
+    "dplayer": "^1.26.0",
     "element-plus": "^1.2.0-beta.5",
     "eslint-plugin-import": "^2.25.3",
+    "koa-jwt": "^4.0.3",
     "normalize.css": "^8.0.1",
     "nprogress": "^0.2.0",
     "vue": "^3.2.23",
@@ -20,6 +22,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-eslint": "^8.0.1",
+    "@types/dplayer": "^1.25.2",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "@vitejs/plugin-vue": "^1.9.3",

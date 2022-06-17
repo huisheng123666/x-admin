@@ -79,7 +79,7 @@ const userInfo = computed<User>(() => store.state.userinfo || {})
 
 const isCollapse = ref(false)
 const noticeCount = ref(0)
-const defaultActive = ref(location.pathname)
+const defaultActive = ref(location.pathname.slice(2))
 
 const toggleMenu = () => {
   isCollapse.value = !isCollapse.value

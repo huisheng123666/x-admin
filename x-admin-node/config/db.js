@@ -2,6 +2,8 @@ const mongoose = require('mongoose')
 const config = require('./index')
 const log4js = require('../utils/log')
 const dataInit = require('./datainit')
+const { getMovies } = require('../reptile/movie')
+const schedule = require('node-schedule')
 
 mongoose.connect(config.URL, {
   useNewUrlParser: true,
@@ -23,4 +25,12 @@ db.on('error', (err) => {
 db.on('open', async () => {
   log4js.info(`***数据库连接成功`)
   await dataInit()
+  // await getMovies(1)
+  // await getMovies(26)
+  schedule.scheduleJob('20 15 * * *', async () => {
+    await getMovies(1)
+    await getMovies(14)
+    await getMovies(21)
+    await getMovies(26)
+  })
 })

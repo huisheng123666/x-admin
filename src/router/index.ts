@@ -5,6 +5,7 @@ import Error from '@/views/error/error.vue'
 import store from '@/store';
 import { getItem } from '@/utils/storage';
 import service from '@/utils/request';
+// @ts-ignore
 import NProgress from 'nprogress'
 
 const routes: RouteRecordRaw[] = [
@@ -39,6 +40,10 @@ const routes: RouteRecordRaw[] = [
       {
         path: 'audit/waiting',
         component: () => import('@/views/audit/waiting/waiting.vue')
+      },
+      {
+        path: 'movie',
+        component: () => import('@/views/movie/movie.vue')
       }
     ]
   },

@@ -16,6 +16,7 @@ const menus = require('./routes/menus')
 const roles = require('./routes/roles')
 const dept = require('./routes/dept')
 const holiday = require('./routes/holiday')
+const movie = require('./routes/movie')
 
 // error handler
 onerror(app)
@@ -64,6 +65,8 @@ app.use(menus.routes(), menus.allowedMethods())
 app.use(roles.routes(), roles.allowedMethods())
 app.use(dept.routes(), dept.allowedMethods())
 app.use(holiday.routes(), holiday.allowedMethods())
+app.use(movie.routes(), movie.allowedMethods())
+
 app.use(index.routes(), index.allowedMethods())
 
 // error-handling
