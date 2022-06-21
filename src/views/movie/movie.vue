@@ -82,9 +82,9 @@
     :model-value="showPlayer"
     width="800px"
     @close="togglePlayer(false)"
-    @opened="playVideo"
+    :close-on-click-modal="false"
   >
-    <div class="player" id="dplayer"></div>
+    <iframe v-if="showPlayer" :src="editRow?.playUrls[0][0]" allowfullscreen></iframe>
   </el-dialog>
 </div>
 </template>
@@ -94,7 +94,6 @@ import useQueryTable from '@/hooks/query-table';
 import { reactive, ref } from 'vue';
 import { ElMessage, ElMessageBox } from 'element-plus';
 import service from '@/utils/request';
-import DPlayer from 'dplayer'
 
 const form = reactive({
   type: '',
@@ -150,29 +149,16 @@ function getMovieById() {
 
 const showPlayer = ref(false)
 
-const player = ref<any>()
+// const player = ref<any>()
 
 function togglePlayer(show: boolean, row: any = null) {
   showPlayer.value = show
   editRow.value = row
-  if (!show) {
-    player.value.destroy()
-  }
-}
-
-function playVideo() {
-  console.log(editRow.value.playUrls[1][0])
-  player.value = new DPlayer({
-    container: document.getElementById('dplayer'),
-    video: {
-      url: editRow.value.playUrls[1][0]
-    }
-  });
 }
 </script>
 
 <style lang="stylus" scoped>
-.player
+iframe
   width 100%
   height 400px
   background #000

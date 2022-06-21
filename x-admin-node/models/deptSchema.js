@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 const dayjs = require('dayjs')
 
 const schema = {
-  parentId: [mongoose.Types.ObjectId],
+  parentId: [{ type: mongoose.Types.ObjectId }],
   deptName: String,
   user: {
     type: mongoose.Types.ObjectId,
