@@ -14,6 +14,7 @@ export default defineConfig({
   build: {
     outDir: 'x-admin-node/public/x'
   },
+  base: '/x',
   server: {
     port: 3002,
     proxy: {
