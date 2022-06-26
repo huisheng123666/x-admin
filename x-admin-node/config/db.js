@@ -27,7 +27,7 @@ db.on('open', async () => {
   await dataInit()
   // await getMovies(14)
   // await getMovies(26)
-  schedule.scheduleJob('20 15 * * *', async () => {
+  schedule.scheduleJob('15 20 * * *', async () => {
     await getMovies(1)
     await getMovies(14)
     await getMovies(21)
