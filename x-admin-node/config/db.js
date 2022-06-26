@@ -25,8 +25,10 @@ db.on('error', (err) => {
 db.on('open', async () => {
   log4js.info(`***数据库连接成功`)
   await dataInit()
-  // await getMovies(14)
-  // await getMovies(26)
+  await getMovies(1)
+  await getMovies(14)
+  await getMovies(21)
+  await getMovies(26)
   schedule.scheduleJob('15 20 * * *', async () => {
     await getMovies(1)
     await getMovies(14)
