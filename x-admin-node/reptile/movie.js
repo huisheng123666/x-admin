@@ -28,7 +28,7 @@ async function getMovieList(url) {
 			links.push('https://www.ylzy1.com/' + url)
 		}
 	})
-	return links
+	return links.slice(0, 10)
 }
 
 async function getDetail(url) {
