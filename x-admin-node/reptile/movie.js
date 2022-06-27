@@ -75,7 +75,7 @@ async function getMovies(type = 1) {
 			})
 		}
 		console.log(detail.title, detail.playUrls);
-		await sleep(3000)
+		await sleep(5000)
 	}
 }
 
