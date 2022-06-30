@@ -22,8 +22,8 @@
   <div class="base-table">
     <div class="action">
       <el-form inline size="mini" :model="singleForm" ref="singleFormRef">
-        <el-form-item label="id:" prop="id" required>
-          <el-input v-model="singleForm.id" />
+        <el-form-item prop="id" required>
+          <el-input v-model="singleForm.id" placeholder="请输入id" />
         </el-form-item>
         <el-form-item prop="type" required>
           <el-select v-model="singleForm.type">
@@ -40,6 +40,7 @@
     </div>
     <el-table
       :data="tableData"
+      v-loading="tableLoading"
     >
       <el-table-column label="名称" prop="title" width="120px" show-overflow-tooltip />
       <el-table-column label="封面" width="180px">
@@ -57,11 +58,12 @@
       <el-table-column label="语言" prop="language" width="80px" />
       <el-table-column label="地区" prop="area" width="80px" />
       <el-table-column label="类型" prop="category" width="80px" />
-      <el-table-column label="简介" prop="intro" min-width="200px" show-overflow-tooltip />
-      <el-table-column label="操作" fixed="right" width="100px">
+      <!-- <el-table-column label="简介" prop="intro" min-width="200px" show-overflow-tooltip /> -->
+      <el-table-column label="操作" fixed="right" width="120px">
         <template #default="scope">
           <el-button @click="deleteRow(scope.row)" type="text" style="color: red;">删除</el-button>
           <el-button @click="togglePlayer(true, scope.row)" type="text">试播</el-button>
+          <el-button type="text" @click="toggleDialog(true, scope.row)">编辑</el-button>
         </template>
       </el-table-column>
     </el-table>
@@ -86,6 +88,14 @@
   >
     <iframe v-if="showPlayer" :src="editRow?.playUrls[0][0]" allowfullscreen></iframe>
   </el-dialog>
+
+  <movie-edit
+    :dialogVisible="dialogVisible"
+    v-if="dialogVisible"
+    :defaultVal="editRow"
+    @close="toggleDialog(false)"
+    @update="updateList"
+  />
 </div>
 </template>
 
@@ -94,6 +104,7 @@ import useQueryTable from '@/hooks/query-table';
 import { reactive, ref } from 'vue';
 import { ElMessage, ElMessageBox } from 'element-plus';
 import service from '@/utils/request';
+import MovieEdit from '@/components/movie/movie-edit.vue';
 
 const form = reactive({
   type: '',
@@ -104,12 +115,16 @@ const formRef = ref()
 
 const {
   tableData,
+  tableLoading,
   page,
   changePage,
   filterTable,
   resetForm,
   getList,
-  editRow
+  editRow,
+  toggleDialog,
+  dialogVisible,
+  updateList
 } = useQueryTable({
   url: '/movie/list',
   form,

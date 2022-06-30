@@ -20,6 +20,10 @@ const schema = {
 	createTime: {
 		type: Number,
 		default: Date.now()
+	},
+	clicks: {
+		type: Number,
+		default: 0
 	}
 }
 

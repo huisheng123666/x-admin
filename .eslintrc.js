@@ -17,7 +17,9 @@ module.exports = {
     'space-before-function-paren': 0,
     'prefer-promise-reject-errors': 0,
     'vue/multi-word-component-names': 0,
-    'eol-last': 0
+    'eol-last': 0,
+    'no-mixed-spaces-and-tabs': 0,
+    'no-tabs': 0
     // quotes: 0
   },
   globals: {
