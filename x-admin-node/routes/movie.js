@@ -5,6 +5,14 @@ const { getSingle } = require('../reptile/movie');
 
 router.prefix('/api/movie')
 
+function sleep(time) {
+	return new Promise(resolve => {
+		setTimeout(() => {
+			resolve()
+		}, time)
+	})
+}
+
 router.get('/list', async (ctx, next) => {
 	try {
 		const { type, name } = ctx.request.query

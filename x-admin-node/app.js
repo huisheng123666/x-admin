@@ -48,6 +48,7 @@ app.use(async (ctx, next) => {
   await next().catch(err => {
     if (err.status === 401) {
       ctx.status = 200
+      // ctx.res.writeHead(200, {'ContentType': 'application/json; charset=utf-8'})
       ctx.body = util.fail('token认证失败', util.CODE.AUTH_ERROR)
     } else {
       throw err

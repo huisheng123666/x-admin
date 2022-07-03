@@ -84,7 +84,11 @@ async function getSingle(id, type) {
   const detail = await getDetail(link)
   const hasMovie = await Movie.findOne({ id: detail.id })
   if (hasMovie) {
-    await Movie.findOneAndUpdate({ id: detail.id }, detail)
+    await Movie.findOneAndUpdate({ id: detail.id }, {
+			...detail,
+			type,
+			createTime: Date.now()
+		})
   } else {
     await Movie.create({
       ...detail,
