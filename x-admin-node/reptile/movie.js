@@ -71,7 +71,7 @@ async function getMovies(type = 1) {
 			await Movie.create({
 				...detail,
 				type,
-              createTime: Date.now()
+				createTime: Date.now()
 			})
 		}
 		console.log(detail.title, detail.playUrls);

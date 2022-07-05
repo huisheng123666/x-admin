@@ -15,11 +15,14 @@ function sleep(time) {
 
 router.get('/list', async (ctx, next) => {
 	try {
-		const { type, name } = ctx.request.query
+		const { type, name, category } = ctx.request.query
 		const { page, skipIndex } = util.pager(ctx.request.query)
 		const params = {}
 		if (type) {
 			params.type = Number(type)
+		}
+		if (category) {
+			params.category = category
 		}
 		if (name) {
 			params.$or = [{ title: new RegExp(name, 'i') }]
