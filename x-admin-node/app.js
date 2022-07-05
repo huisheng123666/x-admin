@@ -63,7 +63,8 @@ app.use(koaJwt({ secret: 'xmw' }).unless({
     /^\/x/,
     '/',
     '/login',
-    '/api/movie/recommend'
+    '/api/movie/recommend',
+    '/api/movie/list'
   ]
 }))
 
