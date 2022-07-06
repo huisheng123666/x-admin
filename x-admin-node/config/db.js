@@ -39,7 +39,7 @@ db.on('open', async () => {
     // await getMovies(1)
     // await getMovies(14)
     // await getMovies(21)
-    await getMovies(26)
+    // await getMovies(26)
   } catch (e) {
     console.error(e)
   }
