@@ -49,7 +49,7 @@ app.use(async (ctx, next) => {
     if (err.status === 401) {
       ctx.status = 200
       // ctx.res.writeHead(200, {'ContentType': 'application/json; charset=utf-8'})
-      ctx.body = util.fail('token认证失败', util.CODE.AUTH_ERROR)
+      ctx.body = util.fail('您还未登录或者登录过期，请重新登录', util.CODE.AUTH_ERROR)
     } else {
       throw err
     }
@@ -64,7 +64,8 @@ app.use(koaJwt({ secret: 'xmw' }).unless({
     '/',
     '/login',
     '/api/movie/recommend',
-    '/api/movie/list'
+    '/api/movie/list',
+    '/api/users/operate'
   ]
 }))
 

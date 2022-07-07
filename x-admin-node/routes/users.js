@@ -14,7 +14,7 @@ router.post('/login', async (ctx) => {
     const res = await User.findOne({
       userName,
       userPwd: md5(userPwd)
-    }, { _id: 0, userPwd: 0 })
+    }, { userPwd: 0 })
     if (res) {
       const token = jwt.sign({
         data: res._doc
@@ -89,8 +89,8 @@ async function validateName(userName, userId) {
     if (self.userName === userName) {
       return true
     }
-    const another = await User.findOne({ userName: userName + '1212' })
-    if (another) {
+    const another = await User.find({ userName: userName })
+    if (another.length > 1) {
       return false
     }
   }
@@ -99,7 +99,7 @@ async function validateName(userName, userId) {
 }
 
 router.post('/operate', async (ctx) => {
-  const { userId, userName } = ctx.request.body
+  const { userId, userName, password } = ctx.request.body
   const isNamePass = await validateName(userName, userId)
   try {
     if (!isNamePass) {
@@ -114,7 +114,7 @@ router.post('/operate', async (ctx) => {
       const newRes = await User.create({
         userId: res.sequence_val,
         ...ctx.request.body,
-        userPwd: md5('123456')
+        userPwd: password || md5('123456')
       })
       ctx.body = util.success(newRes)
     }
