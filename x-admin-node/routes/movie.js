@@ -1,8 +1,10 @@
 const router = require('koa-router')()
 const Movie = require('../models/movie')
 const MovieCollection = require('../models/movieCollection')
+const MovieComment = require('../models/movieComment')
 const util = require('../utils/util')
 const { getSingle } = require('../reptile/movie');
+const dayjs = require('dayjs');
 
 router.prefix('/api/movie')
 
@@ -136,6 +138,47 @@ router.get('/collections', async (ctx, next) => {
 				total
 			},
 			list: list.map(item => item.movie)
+		})
+	} catch (e) {
+		console.log(e);
+		ctx.body = util.fail('网络错误，请稍后再试')
+	}
+})
+
+router.post('/comment', async (ctx, next) => {
+	try {
+		const { id, text } = ctx.request.body
+		const user = ctx.state.user.data
+		const one = await MovieComment.create({
+			movie: id,
+			user: user._id,
+			text,
+			createTime: Date.now()
+		})
+		ctx.body = util.success(one)
+	} catch (e) {
+		console.log(e);
+		ctx.body = util.fail('网络错误，请稍后再试')
+	}
+})
+
+router.get('/comments', async (ctx, next) => {
+	try {
+		const { page, skipIndex } = util.pager(ctx.request.query)
+		const query = MovieComment.find({
+			movie: ctx.request.query.id
+		}).populate('user').sort({ createTime: -1 })
+		const list = await query.skip(skipIndex).limit(page.pageSize)
+		const total = await MovieComment.count({movie: ctx.request.query.id})
+		list.forEach(item => {
+			item._doc.createTime = dayjs(item.createTime).format('YYYY-MM-DD')
+		  })
+		ctx.body = util.success({
+			page: {
+				...page,
+				total
+			},
+			list,
 		})
 	} catch (e) {
 		console.log(e);
