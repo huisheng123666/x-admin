@@ -52,6 +52,10 @@ const routes: RouteRecordRaw[] = [
     component: Login
   },
   {
+    path: '/download',
+    component: () => import('@/views/download/download.vue')
+  },
+  {
     path: '/:pathMatch(.*)*',
     component: Error
   }
@@ -91,7 +95,7 @@ router.afterEach(() => {
 })
 
 function checkRoute(to: RouteLocationNormalized, next: NavigationGuardNext) {
-  if (to.path !== '/') {
+  if (to.path !== '/' && to.path !== '/download') {
     service.post('/menu/check', {
       path: to.path
     })

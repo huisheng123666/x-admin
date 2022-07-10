@@ -66,6 +66,7 @@ app.use(koaJwt({ secret: 'xmw' }).unless({
     '/api/movie/recommend',
     '/api/movie/list',
     '/api/movie/comments',
+    '/api/movie/download',
     '/api/users/operate'
   ]
 }))

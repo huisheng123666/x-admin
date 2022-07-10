@@ -5,6 +5,8 @@ const MovieComment = require('../models/movieComment')
 const util = require('../utils/util')
 const { getSingle } = require('../reptile/movie');
 const dayjs = require('dayjs');
+const send = require('koa-send')
+const path = require('path')
 
 router.prefix('/api/movie')
 
@@ -92,14 +94,14 @@ router.get('/collection', async (ctx, next) => {
 			const collection = await MovieCollection.create({
 				user: user._id,
 				movie: id,
-			}) 
-			ctx.body = util.success(collection)	
+			})
+			ctx.body = util.success(collection)
 		} else {
 			const collection = await MovieCollection.findOneAndDelete({
 				user: user._id,
 				movie: id,
-			}) 
-			ctx.body = util.success(collection)	
+			})
+			ctx.body = util.success(collection)
 		}
 	} catch (e) {
 		ctx.body = util.fail('网络错误，请稍后再试')
@@ -184,6 +186,10 @@ router.get('/comments', async (ctx, next) => {
 		console.log(e);
 		ctx.body = util.fail('网络错误，请稍后再试')
 	}
+})
+
+router.get('/download', async (ctx, next) => {
+	await send(ctx, 'app-release.apk', { root: path.resolve(__dirname, '../public') })
 })
 
 module.exports = router
