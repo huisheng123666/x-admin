@@ -24,11 +24,16 @@
   background-size cover
   display flex
   align-items center
+  @media screen and (max-width: 800px)
+    display block
   .center
     display flex
     align-items center
     width 800px
     margin 0 auto
+    @media screen and (max-width: 800px)
+      display block
+      width 100vw
     &>video
       width 250px
     .desc
