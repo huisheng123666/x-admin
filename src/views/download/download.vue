@@ -1,7 +1,7 @@
 <template>
   <div class="download">
     <div class="center">
-      <video src="https://admin.xmw.monster/x/xm.MP4" muted autoplay loop></video>
+      <video src="http://124.222.73.226:4000/x/xm.MP4" muted autoplay loop></video>
       <div class="desc">
         <h4>X M电影APP</h4>
         <p>无聊开发的观影APP，悄悄的用</p>
