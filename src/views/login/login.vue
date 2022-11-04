@@ -65,7 +65,7 @@ const submit = () => {
 }
 
 onMounted(() => {
-  window.particlesJS.load('login_bg', '/particles.json', () => {})
+  window.particlesJS.load('login_bg', '/x/particles.json', () => {})
 })
 </script>
 
