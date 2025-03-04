@@ -88,7 +88,7 @@ const toggleMenu = () => {
 const dropDownCommend = (eventKey: string) => {
   if (eventKey === 'logout') {
     clear()
-    window.location.replace('/login')
+    window.location.replace('/x/login')
   }
 }
 
